@@ -17,6 +17,8 @@ import org.opencv.core.Rect;
 
 import java.util.List;
 import org.opencv.android.Utils;
+import org.opencv.imgproc.Imgproc;
+
 /**
  * Created by darwinhu on 2018/1/2.
  */
@@ -68,6 +70,8 @@ public class CRecognition {
         Mat img = new Mat();
         Bitmap bmp32 = m_bmp.copy(Bitmap.Config.ARGB_8888, true);
         Utils.bitmapToMat(bmp32, img);
+        //terry, fix for M7
+        Imgproc.cvtColor(img, img, Imgproc.COLOR_BGRA2GRAY);
 
         List<Mat> images = m_ppF.getProcessedImage(img, PreProcessorFactory.PreprocessingMode.RECOGNITION);
         Rect[] faces = m_ppF.getFacesForRecognition();

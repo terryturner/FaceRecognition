@@ -78,7 +78,9 @@ public class CTraining {
                     for (File file : files) {
                         if (FileHelper.isFileAnImage(file)) {
                             Mat imgRgb = Imgcodecs.imread(file.getAbsolutePath());
-                            Imgproc.cvtColor(imgRgb, imgRgb, Imgproc.COLOR_BGRA2RGBA);
+                            //terry, M7 not support
+                            //Imgproc.cvtColor(imgRgb, imgRgb, Imgproc.COLOR_BGRA2RGBA);
+                            Imgproc.cvtColor(imgRgb, imgRgb, Imgproc.COLOR_BGRA2GRAY);
                             Mat processedImage = new Mat();
                             imgRgb.copyTo(processedImage);
                             List<Mat> images = m_ppF.getProcessedImage(processedImage, PreProcessorFactory.PreprocessingMode.RECOGNITION);
