@@ -36,6 +36,9 @@
     <string-array name="contrast">
         <item>@string/histogrammEqualization</item>
     </string-array>
+    <string-array name="contrast_default">
+        <item>@string/histogrammEqualization</item>
+    </string-array>
     <string-array name="standard_post">
         <item>@string/resize</item>
     </string-array>

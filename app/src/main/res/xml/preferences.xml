@@ -164,12 +164,14 @@
             android:title="Standard Preprocessing"
             android:entries="@array/standard_pre"
             android:entryValues="@array/standard_pre"
-            android:key="key_standard_pre" />
+            android:key="key_standard_pre"
+            android:defaultValue="@array/empty_array"/>
         <com.goldtek.recognitionsvr.Helpers.MultiSelectListPreference
             android:title="Brightness Correction"
             android:entries="@array/brightness"
             android:entryValues="@array/brightness"
-            android:key="key_brightness" />
+            android:key="key_brightness"
+            android:defaultValue="@array/empty_array"/>
         <com.goldtek.recognitionsvr.Helpers.MultiSelectListPreference
             android:title="Contours"
             android:entries="@array/contours"
@@ -180,7 +182,8 @@
             android:title="Contrast Adjustment"
             android:entries="@array/contrast"
             android:entryValues="@array/contrast"
-            android:key="key_contrast" />
+            android:key="key_contrast"
+            android:defaultValue="@array/contrast_default"/>
         <com.goldtek.recognitionsvr.Helpers.MultiSelectListPreference
             android:title="Standard Postprocessing"
             android:entries="@array/standard_post"

@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/RecognitionSvr.iml" filepath="$PROJECT_DIR$/RecognitionSvr.iml" />
+      <module fileurl="file://$PROJECT_DIR$/GoldtekFaceRecognitionSrv.iml" filepath="$PROJECT_DIR$/GoldtekFaceRecognitionSrv.iml" />
+      <module fileurl="file://C:\Users\MIS\AndroidStudioProjects\GoldtekFaceRecognitionSrv\RecognitionSvr.iml" filepath="C:\Users\MIS\AndroidStudioProjects\GoldtekFaceRecognitionSrv\RecognitionSvr.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/opencv-3.2.0/opencv-3.2.0.iml" filepath="$PROJECT_DIR$/opencv-3.2.0/opencv-3.2.0.iml" />
     </modules>
